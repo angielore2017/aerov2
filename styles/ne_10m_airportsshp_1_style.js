@@ -6,8 +6,28 @@ function categories_ne_10m_airportsshp_1(feature, value, size, resolution, label
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case 'major':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(83,83,83,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(170,201,230,1.0)'})}),
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.03793103448275862,
+                  anchor: [11, 11],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/transport_airport.svg"
+            }),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.03793103448275862,
+                  anchor: [11, 11],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/transport_airport_1.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -15,8 +35,28 @@ function categories_ne_10m_airportsshp_1(feature, value, size, resolution, label
                     break;
 case 'mid':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 5.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(26,106,181,1.0)'})}),
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.03793103448275862,
+                  anchor: [11, 11],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/transport_airport_2.svg"
+            }),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.03793103448275862,
+                  anchor: [11, 11],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/transport_airport_3.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -24,8 +64,28 @@ case 'mid':
                     break;
 case 'small':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 2.0 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(166,97,26,1.0)'})}),
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.03793103448275862,
+                  anchor: [11, 11],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/transport_airport_4.svg"
+            }),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    }),new ol.style.Style({
+        image: new ol.style.Icon({
+                  imgSize: [580, 580],
+                  scale: 0.03793103448275862,
+                  anchor: [11, 11],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/transport_airport_5.svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
